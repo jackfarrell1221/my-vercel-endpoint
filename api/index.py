@@ -77,6 +77,7 @@ def percentile(data: List[float], p: float) -> float:
     d1 = s_data[int(c)] * (k - f)
     return d0 + d1
 
+@app.post("/")
 @app.post("/api")
 @app.post("/api/index")
 def get_metrics(req: MetricsRequest):
